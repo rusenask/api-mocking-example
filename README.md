@@ -16,7 +16,7 @@ To test this application using Hoverfly, export administration endpoint (to impo
     
 and also provide proxy endpoint:
 
-    export HOVERFLY=http://hoverfly:8500/
+    export HOVERFLY=http://hoverfly-address:8500/
     
 Having these variables set, test cases will automagically populate Hoverfly with test data:
 
