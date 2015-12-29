@@ -1,12 +1,10 @@
-# Example application to query weather conditions from [OpenWeatherMap](http://openweathermap.org/)
+## Example application to query weather conditions from [OpenWeatherMap](http://openweathermap.org/)
 
-To use it:
-* Sign up to OpenWeatherMap, you will get APIKEY. When looking at your account details, copy API key to your clipboard.
-* Export it as environment variable:
+To use it - sign up to OpenWeatherMap, you will get APIKEY. When looking at your account details, copy API key to your clipboard. Export it as environment variable:
 
     export APIKEY=your_key_here
-    
-* Launch app: 
+
+ Launch app: 
 
     python main.py
 
@@ -17,7 +15,9 @@ To test this application using Hoverfly, export administration endpoint (to impo
     export HOVERFLY_ADMIN=http://hoverfly-address:8888/
     
 and also provide proxy endpoint:
-    
+
     export HOVERFLY=http://hoverfly:8500/
     
-Having these variables set, test cases will automagically populate Hoverfly with test data.
+Having these variables set, test cases will automagically populate Hoverfly with test data:
+
+    python tests.py
