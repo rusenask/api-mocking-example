@@ -25,6 +25,7 @@ class TestGetWeather(unittest.TestCase):
             self.assertEqual(resp.status_code, 200)
             # setting proxy environment variable
             os.environ["HTTP_PROXY"] = HOVERFLY
+            print("setup complete")
 
     def tearDown(self):
         """
