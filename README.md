@@ -10,6 +10,15 @@ To use it - sign up to OpenWeatherMap, you will get APIKEY. When looking at your
 
 ## Testing
 
+    source proxy.sh
+    python tests.py
+
+### Manually
+
+Setting APIKEY for testing (which is recorded):
+
+    export APIKEY=qweqweqweqweqweq
+
 To test this application using Hoverfly, export administration endpoint (to import data):
 
     export HOVERFLY_ADMIN=http://hoverfly-address:8888/
